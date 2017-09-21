@@ -1,0 +1,35 @@
+/* RESPONSIVE */
+
+@media all and (min-width: 620px) {}
+
+@media all and (min-width: 768px) {}
+
+@media all and (min-width: 992px) {
+
+    #header .header-left {
+        width: auto;
+        justify-content: space-between;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    header .menu-nav {
+        display: flex;
+    }
+
+    .btn-menu {
+        display: none !important;
+    }
+
+    form input[type=text],
+    form input[type=email],
+    form input[type=password],
+    form input[type=url],
+    form select {
+        width: calc(50% - 10px);
+    }
+}
+
+@media all and (min-width: 1280px) {}

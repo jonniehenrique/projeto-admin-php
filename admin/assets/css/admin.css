@@ -1,0 +1,364 @@
+/* PAINEL ADMIN */
+
+body {
+    background-color: #f4f4f5;
+}
+
+#header {
+    width: 100%;
+    height: 55px;
+    box-shadow: 0 2px 10px #ddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #2196F3;
+}
+
+#header > .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header .header-left {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#header .btn-menu {
+    width: 40px;
+    height: 30px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f4f4f5;
+    color: #2196F3;
+}
+
+header .header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .header-logo a {
+    font-size: 22px;
+    font-weight: 500;
+    color: #fafafa;
+    text-transform: uppercase;
+}
+
+header .header-logo a b {
+    font-weight: 700;
+}
+
+/* MENU */
+
+header .menu-nav {
+    display: none;
+}
+
+header .menu-nav .menu-nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header .menu-nav .menu-nav-item {
+    position: relative;
+}
+
+header .menu-nav .menu-nav-logout {
+    background-color: #1E88E5;
+}
+
+header .menu-nav .menu-nav-link {
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    font-family: 'roboto';
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: all .2s ease-in;
+    color: #fafafa;
+}
+
+header .menu-nav .menu-nav-link:hover,
+header .menu-nav .menu-nav-link:active {
+    background-color: #1E88E5;
+}
+
+/* SUBMENU */
+
+.submenu-nav {
+    width: 120px;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    bottom:  -80px;
+    left:  0;
+    z-index:  999;
+    background-color: #fafafa;
+    box-shadow: 0 2px 10px #ddd;
+    list-style:  none;
+}
+
+.submenu-nav.active {
+    display: flex;
+}
+
+.submenu-nav li {
+    font-size: 17px;
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+
+.submenu-nav li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 0;
+    transition:  all .2s;
+}
+
+.submenu-nav li a:hover {
+    background-color: #dedede;
+}
+
+/* CONTENT */
+
+main {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+main > .container {
+    background-color: #fafafa;
+    box-shadow: 0 2px 10px #ddd;
+    padding: 15px;
+}
+
+.main-header {
+    padding:  12px 0;
+    position: relative;
+}
+
+.main-header .main-title {
+    font-size:  28px;
+    font-family: 'Roboto';
+    font-weight: 600;
+    padding-bottom: 6px;
+    border-bottom: #ddd solid 1px;
+}
+
+.main-section {
+    padding:  0 10px;
+    position: relative;
+}
+
+.main-section[hidden] {
+    display: none;
+}
+
+.main-section.active {
+    display: block;
+}
+
+.main-section .main-subtitle {
+    font-size:  20px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+/* TABLES */
+
+table {
+    width: 100%;
+    position: relative;
+    margin: 20px 0;
+}
+
+thead {
+    background-color: #e7e7e7;
+}
+
+thead tr th {
+    padding: 10px 0;
+    font-size: 12px;
+    font-family: 'Roboto';
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+tbody tr td {
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #dedede;
+    font-size: 15px;
+    font-family: 'Roboto';
+}
+
+tbody tr td a {
+    padding: 0 5px;
+}
+
+tbody tr td .edit {
+    color: green;
+}
+
+tbody tr td .delete {
+    color: red;
+}
+
+/* SEM REGISTROS */
+
+.sem-registros {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Roboto';
+    padding: 20px 0;
+}
+
+.sem-registros p i {
+    display: block;
+    padding-bottom: 10px;
+    font-size: 32px;
+}
+
+/* FORMS */
+
+form {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+form input[type=text],
+form input[type=email],
+form input[type=password],
+form input[type=url],
+form select {
+    width: 100%;
+    height: 40px;
+    background-color: #fafafa;
+    padding-left: 12px;
+    color: #444;
+    font-size: 16px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    border: 1px solid #dedede;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+form input:disabled {
+    opacity: .5;
+}
+
+form textarea {
+    height: 90px;
+    min-height: 90px;
+    max-height: 120px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    background-color: #fafafa;
+    border: 1px solid #dedede;
+    padding: 12px;
+    font-size: 16px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+form input:required,
+form textarea:required {
+    border-left: 2px solid #2196F3;
+}
+
+form .form-upload {
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+form .form-upload-list {
+    width: 100%;
+    min-height: 80px;
+    border: #ddd solid 1px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+form .form-footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-top: #dedede solid 1px;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+form button[type=submit] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #2196F3;
+    color: #fafafa;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    transition: all .2s ease-in;
+}
+
+form button[type=submit]:hover,
+form button[type=submit]:active {
+    background-color: #1565C0;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.main-nav .nav-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.main-nav .nav-section:first-child {
+    border-left: 1px solid #ddd;
+}
+
+.main-nav .nav-section.active {
+    background-color: #ddd;
+}

@@ -1,0 +1,151 @@
+/* BASE */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+
+    font-size: 100%;
+    font-weight: normal;
+    font-family: inherit;
+
+    text-rendering: optimizeLegibility;
+
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Source Sans Pro', 'arial', sans-serif;
+    font-size: 10px;
+    position: relative;	
+}
+
+a, a:hover, a:active {
+    text-decoration: none;
+    color: #444;
+}
+
+.container {
+    width: 100%;
+    padding: 0 10px;
+    margin: auto;
+    position: relative;
+}
+
+/* FLEXBOX */
+
+.flex {
+    display: flex;
+}
+
+.flex-item {
+    flex-basis: 50%;
+    padding: 0 10px;
+}
+
+/* FLEXBOX - CENTER */
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-center-start {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.flex-center-end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.flex-center-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-center-around {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* FLEXBOX - START */
+
+.flex-start {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.flex-start-center {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.flex-start-end {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.flex-start-around {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.flex-start-between {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* FLEXBOX - END */
+
+.flex-end {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.flex-end-start {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.flex-end-center {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.flex-end-around {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.flex-end-between {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+/* FLEXBOX - DIRECTION */
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
